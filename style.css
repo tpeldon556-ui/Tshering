@@ -1,4 +1,4 @@
-/* General Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,65 +8,82 @@
 /* Body */
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: #f4f6f9;
+    background: linear-gradient(to right, #ffe4ec, #fff0f5);
     color: #333;
 }
 
 /* Container */
 .container {
-    max-width: 1000px;
+    max-width: 950px;
     margin: 40px auto;
-    background: #fff;
+    background: #ffffff;
     padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
 /* Profile Image */
 .profile {
     display: block;
     margin: 0 auto;
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    border: 4px solid #0a3d62;
     object-fit: cover;
+    border: 5px solid #ff8fab;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
 /* Name */
 h1 {
     text-align: center;
     margin-top: 15px;
-    color: #0a3d62;
+    color: #d63384;
+    font-size: 32px;
 }
 
 /* Contact */
 .contact-info {
     text-align: center;
-    margin: 10px 0 30px;
+    margin: 10px 0 25px;
     color: #555;
+    font-size: 15px;
 }
 
-/* Section Styling */
+/* Sections */
 .section {
     margin-bottom: 30px;
     padding: 20px;
-    border-radius: 8px;
-    background: #f9fbfd;
+    border-radius: 10px;
+    background: #fff5f8;
     transition: 0.3s;
 }
 
 .section:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }
 
 /* Headings */
 h2 {
     margin-bottom: 15px;
-    color: #0a3d62;
-    border-left: 5px solid #0a3d62;
+    color: #d63384;
+    border-left: 5px solid #ff8fab;
     padding-left: 10px;
+}
+
+/* Cards */
+.exp-entry, .edu-entry {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #ffe0ea;
+    transition: 0.3s;
+}
+
+.exp-entry:hover, .edu-entry:hover {
+    border-color: #ff8fab;
 }
 
 /* Lists */
@@ -78,46 +95,33 @@ li {
     margin-bottom: 8px;
 }
 
-/* Experience & Education Cards */
-.exp-entry, .edu-entry {
-    background: #fff;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    border: 1px solid #eee;
-    transition: 0.3s;
-}
-
-.exp-entry:hover, .edu-entry:hover {
-    border-color: #0a3d62;
-}
-
 /* Buttons */
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background: #0a3d62;
-    color: #fff;
-    border-radius: 5px;
+    background: #ff8fab;
+    color: white;
+    border-radius: 25px;
     text-decoration: none;
     margin-top: 10px;
     transition: 0.3s;
+    font-size: 14px;
 }
 
 .button:hover {
-    background: #07406b;
+    background: #d63384;
 }
 
 /* References */
 .references p {
-    background: #fff;
+    background: #ffffff;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 10px;
-    border: 1px solid #eee;
+    border: 1px solid #ffe0ea;
 }
 
-/* Footer Style (optional) */
+/* Footer */
 .footer {
     text-align: center;
     margin-top: 30px;
